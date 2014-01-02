@@ -1,0 +1,97 @@
+
+数字转罗马数字，
+
+file system
+auto recovery，load balancing
+best availability and scalability. 
+
+nth biggest number in a BST
+浮点数的平方根
+I was given two linked lists of 
+integers. I was asked to return a linked list which contains the non-common 
+
+Find all permutations of a string
+
+ 一个巨大的File (billions of rows)，每行包含两个field：ID, description。
+设计算法，找出所有对应duplicated description的ID。
+两个sorted的数组merge
+ 用pre-order in-order sequence重构binary tree.
+ 设计一DVD出租系统，database table, 类和接口等
+the kth smallest in two sorted array
+
+In Summary there are significant differences between Hashtable and HashMap in Java e.g. thread-safety and speed and based upon that only use Hashtable if you absolutely need thread-safety, if you are running Java 5 consider using ConcurrentHashMap in Java.
+
+
+
+
+哪个路径上的节点最多，路径不是从root到leaf，而是可以从任何地方
+开始，可以从child到parent，返回这样最长的路径上的节点数
+ 编程题是给一个棵树的节点增加一个next指针，指向同一层在他右边的那个节点，最右
+边的节点的指向null
+
+二叉树中序遍历的iterator
+
+OODESIGN是考DESIGN一个图书馆
+
+另一个是实现Java的
+Iterator Object的一个findNext函数，要求针对embedded list，比如（（a,b)(c)(d,
+e))这样的结构，能找到next item
+oo题,设计出一个卡牌游戏,
+
+2.tell me one of the most chanllege technical problems
+
+设计自动售货机
+前n个prime number
+在0和1组成的区域中找1连成的最大个数
+
+sliding windows
+OOD for a deck of 52 cards, need to implement shuffling and getting next 
+card; OOD for a casino, it has multiple tables and each table has a deck of 
+cards
+
+用stack实现queue, 白板coding
+ 一个大小为n的方形矩阵, 按顺时针的方向打印, 白板coding
+比如:
+1 2 3
+4 5 6
+7 8 9
+打印顺序: 1 2 3 6 9 8 7 4 5
+
+给定一棵树, 每个节点有任意个子节点, 怎样得到深度, 给出递归和非递归两种解
+法, 白板coding
+
+3sum, sort linkedlist, reverse integer
+
+
+restuarant reservation system的设计题
+
+了hashtable。于是问了问hashtable的内部结构，怎
+么实现，怎么解决confliction。
+
+OO Design：设计一个动物园（主要是animal的继承机制）；设计一个餐厅（没啥
+继承，主要是考虑接口设计）；还有常见的就是设计shopping cart
+
+word ladder
+
+给一个很大的文件，里面包含很多单词。计算出现频率最高的k个单词。白板写代码
+
+
+
+
+
+
+roman to int
+找两个string存不存在相同元素
+
+LinkedList如何去duplicate
+
+LCA
+
+一个string，找到所有character出现的频率，并按频率大
+小顺序输出。
+
+Implement Huffman code
+
+hashtable collision
+
+cellphoen keyboard

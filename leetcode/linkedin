@@ -1,0 +1,46 @@
+linkedin 
+“Given a list of numbers L, output a list of numbers where the value at index i is the product of all values in L, excluding the value at index i.
+two sum
+check bst
+
+Two Sum and check if BST
+
+Given a list of numbers L, output a list of numbers where the value at index i is the product of all values in L, excluding the value at index i.
+
+One was to randomize a list a numbers, and one was to print out a binary tree level by level.
+
+1.  给一个二叉树，返回它的镜像
+    实现一个 thread-safe blocking queue
+
+2. 一个嵌套Map， 就是一个HashMap, 它的value可以是一个element也可以是另外一个
+嵌套map或是空的map. 实现一个iterator来遍历这个map里面的所有element。 就是类
+似树遍历一样的方法
+
+
+/**
+ * Given two (dictionary) words as Strings, determine if they are isomorphic. Two words are called isomorphic
+ * if the letters in one word can be remapped to get the second word. Remapping a letter means replacing all
+ * occurrences of it with another letter while the ordering of the letters remains unchanged. No two letters
+ * may map to the same letter, but a letter may map to itself.
+ *
+ * Example:
+ * given "foo", "app"; returns true
+ * we can map "f" -> "a" and "o" -> "p"
+ *
+ * given "bar", "foo"; returns false
+ * we can"t map both "a" and "r" to "o"
+ *
+ * given "turtle", "tletur"; returns true
+ * we can map "t" -> "t", "u" -> "l", "r" -> "e", "l" -> "u", "e" ->"r"
+ *
+ * given "ab", "ca"; returns true
+ * we can map "a" -> "c", "b" -> "a"
+ */
+
+
+ bool overlap = a.start < b.end && b.start < a.end;
+
+ analyzed sets and sets within those sets
+ He asked me to implement List interface of java. I had to implement all add, get and remove methods using any data structure
+
+ (Scramble an array with an equal chance for every value. Return a list of all permutations of an array.)
