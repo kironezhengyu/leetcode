@@ -22,6 +22,37 @@ the kth smallest in two sorted array
 In Summary there are significant differences between Hashtable and HashMap in Java e.g. thread-safety and speed and based upon that only use Hashtable if you absolutely need thread-safety, if you are running Java 5 consider using ConcurrentHashMap in Java.
 
 
+onsite
+1. power（ int a, int b）
+
+2. find ways to make coin change
+
+3. print a binary tree in Zig Zag level order
+
+4. how to decide which data structure can be used for special situations
+
+5.  level search tree, need more than one methods
+
+6. design a battleship game
+
+7. given a wrong prototype,  redesign it
+
+8. Sliding window maximum 
+
+9. hiring manager ask details about my projects
+
+
+（4个印度人+2白人，不管是sde1还是sde2，都在抱怨工作好累还不知道干的什么，
+   只有HM以自己做的东西为荣）
+整个面试组员给的都是positive的反馈，只有午饭时HM那有几个问题卡住了，之后HR打
+电话告知HM决定让我悲剧了。。。
+
+设计一DVD出租系统，database table, 类和接口等
+用pre-order in-order sequence重构binary tree.
+
+Binary Tree的Serialization和Deserialization,
+
+file system
 
 
 哪个路径上的节点最多，路径不是从root到leaf，而是可以从任何地方
@@ -63,35 +94,74 @@ cards
 3sum, sort linkedlist, reverse integer
 
 
-restuarant reservation system的设计题
 
-了hashtable。于是问了问hashtable的内部结构，怎
-么实现，怎么解决confliction。
 
-OO Design：设计一个动物园（主要是animal的继承机制）；设计一个餐厅（没啥
-继承，主要是考虑接口设计）；还有常见的就是设计shopping cart
+**when to use staic:
+ask yourself "does it make sense to call this method, even if no Obj has been constructed yet?" If so, it should definitely be static.
 
-word ladder
+
+OO Design：设计一个动物园（主要是animal的继承机制)-----animal abstract class
+---inheritence, Zoo singleton
+**********
+public class Zoo{
+    private variables
+    private static final Singleton instance= new Singleton()
+    private Zoo(){
+    //constructor
+
+    }
+    public staic getinstance(){
+    if instance ==Null{
+    this. instance= new zoo()
+
+    }
+    return this.zoo;
+    }
+}
+**********
+
+
+restuarant reservation system{
+    1. num of party and num of table
+    2. avliable seats and time 
+    3. waitlist
+    4. table class
+    5. records class
+
+}
+
+
+
+还有常见的就是设计
+
+word ladder --- trie +bfs
 
 给一个很大的文件，里面包含很多单词。计算出现频率最高的k个单词。白板写代码
+top K algorithm ----top K algo
 
 
 
+roman to int----greedy
 
 
 
-roman to int
-找两个string存不存在相同元素
+找两个string存不存在相同元素 ----hash.
 
-LinkedList如何去duplicate
 
-LCA
-
-一个string，找到所有character出现的频率，并按频率大
-小顺序输出。
 
 Implement Huffman code
 
-hashtable collision
 
-cellphoen keyboard
+LinkedList如何去duplicate ----
+
+LCA----
+
+一个string，找到所有character出现的频率，并按频率大
+小顺序输出。 ---hashtable
+
+
+
+hashtable collision ------ 1. a linkedlist with same hash nums, then use .equals to determine output
+2. if full, resize the hash table then mod the size of the table 
+
+cellphone keyboard --permutation

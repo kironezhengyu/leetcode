@@ -9,24 +9,28 @@ class TreeNode():
 
 '''
 Construct a Tree
-            5
+            10
           /   \
-        4      7
-      /  \    /
-    3     6  4
+        8     11
+      /  \    / \
+    3     9  7   12
 '''
 
-root = TreeNode(10)
-root.left = TreeNode(8)
-root.right = TreeNode(2)
-root.left.left=  TreeNode(3)
-root.left.right = TreeNode(5)
-root.right.left = TreeNode(2)
 
+root = TreeNode('F')
+root.left = TreeNode('B')
+root.left.left=  TreeNode('A')
+root.left.right = TreeNode('D')
+root.left.right.left = TreeNode('C')
+root.left.right.right = TreeNode('E')
+
+root.right = TreeNode('G')
+root.right.right = TreeNode('I')
+root.right.right.left = TreeNode('H')
 
 root1 =  TreeNode(5)
 root1.left = TreeNode(4)
-root1.right = TreeNode(7)
+root1.right = TreeNode(3)
 
 def isBST(root):
     if root.left!=None:
@@ -37,7 +41,99 @@ def isBST(root):
             return False
     return True
 
-print isBST(root1)
-print isBST(root)
+
+previous = 0
+#in-order print
+def isBST2(root):
+    if root.left:
+        isBST2(root.left)
+    if root!=None:
+        if root.val < previous:
+            result.append(-999)
+        else:
+            result.append(root)
+    if root.right:
+        isBST2(root.right)
+
+#pre-order iterative:
+def isBST5(root):
+    stack = []
+    stack.append(root)
+    result =[]
+    while len(stack)!=0:
+        current = stack.pop()
+        result.append(current.val)
+        if current.right:
+            stack.append(current.right)
+        if current.left:
+            stack.append(current.left)
+        
+    return result[::]
+
+#in-order
+#so smart...
+def isBST6(root):
+    stack = []
+    result = []
+    while len(stack)!=0 or root:
+        if root:
+            stack.append(root)
+            root = root.left
+        else:
+            root = stack.pop()
+            result.append(root)
+            root = root.right
+
+    return result
+
+def isBST3(root):
+    #dfs ---post order-
+    stack = []
+    stack.append(root)
+    result =[]
+    while len(stack)!=0:
+        current = stack.pop()
+        result.append(current.val)
+        if current.left:
+            stack.append(current.left)
+        if current.right:
+            stack.append(current.right)
+        
+    return result[::-1]
+
+
+def isBST4(root):
+    #bfs ---level order
+    stack = []
+    stack.append(root)
+    result =[]
+    while len(stack)!=0:
+        current = stack.pop(0)
+        result.append(current.val)
+        if current.left:
+            stack.append(current.left)
+        if current.right:
+            stack.append(current.right)
+
+        
+    return result[:]
+
+def allSubSet(arr):
+    result = [[]]
+    current = []
+    for num in arr:
+        current = []
+        for lists in result:
+            current.append(lists+[num])
+        result+=current
+        #result += [ x+[num] for x in result]
+    return result
+#print allSubSet([1,2,3,4])
+
+
+
+
+print isBST4(root)
+print result[:]
 
 

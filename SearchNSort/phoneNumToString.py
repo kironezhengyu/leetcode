@@ -20,7 +20,7 @@ def num_to_word(input):
     letters = digit_map[char]
     result = [prefix+letter for prefix in result for letter in letters]
   return result
-
+print num_to_word(234)
 
 def permut(s,l):
     print("Entering function permut()")
@@ -35,7 +35,7 @@ def permut(s,l):
     print("Returning {}".format(result))
     return result
 
-print all_perms('a','bc')
+#print all_perms('a','bc')
 
 
 
