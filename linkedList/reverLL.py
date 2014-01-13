@@ -34,7 +34,21 @@ def reverse(head):
         previous =head
         head = next
     return previous
-print reverse(head)
+
+
+
+def reverseLL(head):
+
+    previous  =None
+    while head!= None:
+        next =head.next
+        head.next = previous
+        previous = head
+        head = next
+    return previous       
+
+
+print reverseLL(head)
 
 
 

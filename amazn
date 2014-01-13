@@ -1,5 +1,23 @@
 
-数字转罗马数字，
+flood fill:
+Flood-fill (node, target-color, replacement-color):
+ 1. Set Q to the empty queue.
+ 2. Add node to the end of Q.
+ 4. While Q is not empty: 
+ 5.     Set n equal to the last element of Q.
+ 6.     Remove last element from Q.
+ 7.     If the color of n is equal to target-color:
+ 8.         Set the color of n to replacement-color.
+ 9.        Add west node to end of Q.
+ 10.        Add east node to end of Q.
+ 11.        Add north node to end of Q.
+ 12.        Add south node to end of Q.
+ 13. Return.
+
+
+ huge log, find duplicate:
+ external merge sort
+
 
 file system
 auto recovery，load balancing
@@ -93,6 +111,66 @@ cards
 
 3sum, sort linkedlist, reverse integer
 
+Length of a circular linked list 
+longest repeated substring in a given string
+
+Give an example of a project where you failed.
+
+Design a program that would select which elevator in a building would be the most efficient, based on where the elevator is located and headed and where the user is located and headed.
+ongest palindrome in a string
+
+
+recommand system :
+User-based recommendations:
+If User A likes Items 1,2,3,4, and 5,
+And User B likes Items 1,2,3, and 4
+Then User B is quite likely to also like Item 5
+
+Item-based recommendations:
+If Users who purchase item 1 are also disproportionately likely to purchase item 2
+And User A purchased item 1
+Then User A will probably be interested in item 2
+
+Longest repeated substring
+
+
+ symmetric trees
+ copy a linkedlist
+
+  – 1. Find longest Palindrome in give string
+
+
+
+design rubik's cube
+class Square
+    + name : string
+    + accronym : string
+
+class Row
+    + left_square : square
+    + center_square : square
+    + right_square : square
+
+class Face
+    + top_row : list of 3 square
+    + center_row : list of 3 square
+    + bottom_row : list of 3 square
+
+    + rotate(counter_clockwise : boolean) : nothing
+
+class Cube
+    + back_face : face
+    + left_face : face
+    + top_face : face
+    + right_face : face
+    + front_face : face
+    + bottom_face : face
+
+    - rotate_face(cube_fac
+
+***
+ string中longest parlindrome, 我给出了先reverse然后求longest 
+common string的方法
 
 
 
@@ -101,7 +179,7 @@ ask yourself "does it make sense to call this method, even if no Obj has been co
 
 
 OO Design：设计一个动物园（主要是animal的继承机制)-----animal abstract class
----inheritence, Zoo singleton
+---inheritence, Zoo singleton,cage capacity occupancy 
 **********
 public class Zoo{
     private variables

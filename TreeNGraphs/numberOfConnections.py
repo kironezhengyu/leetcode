@@ -10,7 +10,9 @@ movie_info = {'movieB': ['act2', 'act3', 'act5'], 'movieC': ['act1', 'act4'],
       'movieA': ['act1', 'act2', 'act3'], 'movieF': ['KevinBacon', 'act8'], 
       'movieG': ['act7', 'act10', 'act11'], 'movieD': ['act8', 'act4', 'act5'], 
       'movieE': ['act6', 'act7']}
-
+for i in movie_info:
+    actor_info[i] = movie_info[i]
+print actor_info
 def shortest_dictance(actor1,actor2,actor_info,movie_info):
     visited = {actor1: None}
     queue = deque([actor1])
@@ -37,4 +39,4 @@ for i in movie_info:
 
 
 
-print shortest_dictance("act1", "KevinBacon", actor_info, movie_info)
+#print shortest_dictance("act1", "KevinBacon", actor_info, movie_info)

@@ -130,7 +130,7 @@ def allSubSet(arr):
     return result
 #print allSubSet([1,2,3,4])
 
-
+print allSubSet('abcdsada')
 
 
 print isBST4(root)

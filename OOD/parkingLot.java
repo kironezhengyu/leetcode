@@ -122,7 +122,12 @@ public ParkingSpot{
         ////
     }
 }
-
+/**
+*head-head
+*tail-head-head
+*head-teail-head
+*tai-tail-tail-head-head
+**/
 
 
 

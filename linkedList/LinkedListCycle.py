@@ -26,8 +26,8 @@ def addAll(head,arr):
         head = temp
     return refrenceHead
 '''
-    __
-   |  |
+    _____
+   |     |
 1->2->3->4>
 '''
 head = ListNode(1)

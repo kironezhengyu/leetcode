@@ -1,14 +1,16 @@
-def perm1(prefix, string):
-    n = len(string)
-    if n==0 :
-        print prefix
-    else:
-        for i in range(n):
-            perm1(prefix + string[i],  string[0:i] + string[i+1:n])
+def perms(word):
+    stack = list(word)
+    results = [stack.pop()]
+    while len(stack) != 0:
+        c = stack.pop()
+        new_results = []
+        for w in results:
+            for i in range(len(w)+1):
+                new_results.append(w[:i] + c + w[i:])
+        results = new_results
+    return results
 
-
-def perm(string):
-    perm1('',string)
+print perms('abcdsada')
 
 
 def permutation(string):
