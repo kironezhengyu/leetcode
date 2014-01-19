@@ -59,25 +59,38 @@ def serialization(root):
 
     return result
 
-print serialization(root)
-
+#print serialization(root)
+arr = [30, 10, 50, '#', '#', '#', 20, 45, '#', '#', 35, '#', '#']
 #rebuid 
-def deserialization(arr):
-    stack = []
-    for num in arr[1:]:
-        temp = TreeNode(num)
-        stack.append(temp)
-    while stack:
-        current = stack.pop()
-        try:
-            int(current.val)
-            current.left = stack.pop()
-            current.right = stack.pop()
-        except:
-            continue
-    return root
 
-tree = deserialization(serialization(root))
+index = 0
+def deserialization(arr,node):
+    if index >= len(arr):
+        return
+    if arr[index]=='#':
+        index +=1
+        return
+    current = arr[index]
+    node = TreeNode(current)
+    index+=1
+    node.left = deserialization(arr,node.left)
+    node.right = deserialization(arr,node.right)
+    return node
+
+
+
+
+Tree = deserialization(arr,None)
+
+def preorder(tree):
+    if tree==None:
+        return
+    print tree,
+    preorder(tree.left)
+    preorder(tree.right)
+
+print preorder(Tree)
+#tree = deserialization(serialization(root))
 
 def levelOrder(root):
     Q = []
@@ -89,6 +102,10 @@ def levelOrder(root):
             Q.append(current.left)
         if current.right:
             Q.append(current.right)
+
+#print levelOrder(Tree)
+
+
 def inOrder(root):
     stack =  []
     while stack or root:
@@ -100,7 +117,7 @@ def inOrder(root):
             print root.val,
             root = root.right
 
-print inOrder(root)
+#print inOrder(root)
 
 
 

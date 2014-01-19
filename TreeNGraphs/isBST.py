@@ -130,10 +130,42 @@ def allSubSet(arr):
     return result
 #print allSubSet([1,2,3,4])
 
-print allSubSet('abcdsada')
+#print allSubSet('abcdsada')
+
+'''
+    15
+    /\
+    2  2
+   /   \ 
+  3     3
 
 
-print isBST4(root)
-print result[:]
+'''
+
+
+
+root2= TreeNode(15)
+root2.left = TreeNode(2)
+root2.right = TreeNode(2)
+root2.left.left = TreeNode(3)
+root2.right.right = TreeNode(3)
+
+def isMirror(root):
+    return isMirrorHelper(root.left,root.right)
+
+def isMirrorHelper(left,right):
+    print left,right
+    return left==right==None
+    return left.val==right.val and isMirrorHelper(left.left,right.right) and isMirrorHelper(left.right,right.left)
+print isBST4(root2)
+
+print isMirror(root2)
+
+
+
+
+
+print isBST6(root)
+#print result[:]
 
 

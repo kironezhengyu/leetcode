@@ -15,7 +15,7 @@ Flood-fill (node, target-color, replacement-color):
  13. Return.
 
 
- huge log, find duplicate:
+ huge log, find duplicate: ------------
  external merge sort
 
 
@@ -24,14 +24,23 @@ auto recovery，load balancing
 best availability and scalability. 
 
 nth biggest number in a BST
+
+
+
 浮点数的平方根
 I was given two linked lists of 
-integers. I was asked to return a linked list which contains the non-common 
+integers. I was asked to return a linked list which contains the non-common -------
 
-Find all permutations of a string
+----Find all permutations of a string-----
+
 
  一个巨大的File (billions of rows)，每行包含两个field：ID, description。
 设计算法，找出所有对应duplicated description的ID。
+
+
+
+
+
 两个sorted的数组merge
  用pre-order in-order sequence重构binary tree.
  设计一DVD出租系统，database table, 类和接口等
@@ -82,9 +91,10 @@ file system
 
 OODESIGN是考DESIGN一个图书馆
 
-另一个是实现Java的
-Iterator Object的一个findNext函数，要求针对embedded list，比如（（a,b)(c)(d,
-e))这样的结构，能找到next item
+LRU
+
+
+
 oo题,设计出一个卡牌游戏,
 
 2.tell me one of the most chanllege technical problems
@@ -107,7 +117,7 @@ cards
 打印顺序: 1 2 3 6 9 8 7 4 5
 
 给定一棵树, 每个节点有任意个子节点, 怎样得到深度, 给出递归和非递归两种解
-法, 白板coding
+法, 白板coding--------------
 
 3sum, sort linkedlist, reverse integer
 
@@ -117,7 +127,14 @@ longest repeated substring in a given string
 Give an example of a project where you failed.
 
 Design a program that would select which elevator in a building would be the most efficient, based on where the elevator is located and headed and where the user is located and headed.
-ongest palindrome in a string
+
+
+longest palindrome in a string
+
+
+
+
+
 
 
 recommand system :
@@ -131,7 +148,6 @@ If Users who purchase item 1 are also disproportionately likely to purchase item
 And User A purchased item 1
 Then User A will probably be interested in item 2
 
-Longest repeated substring
 
 
  symmetric trees

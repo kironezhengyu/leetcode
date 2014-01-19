@@ -1,8 +1,6 @@
-
 '''
-find nth to last elemnt in one loop
-
-two Ptr
+1-2-3-4-5-6
+-1-2-3-4-5-9--10
 '''
 
 class ListNode():
@@ -26,24 +24,11 @@ def addAll(head,arr):
         head.next = temp
         head = temp
     return refrenceHead
-
-head = ListNode(1)
-addAll(head,[2,1,3,4,1,321,3,45,6,765,8,989])
-
-def findNth(head,n):
-    fast = head
-    slow = head
-    step = 0
-    for distance in range(n):
-        if fast ==None:
-            return 'out of bound'
-        else:
-            fast = fast.next
-    while fast:
-        fast = fast.next
-        slow = slow.next
-    return slow.val
-
-print findNth(head,4)
+l1 = ListNode(1)
+addAll(l1,[9,8,11,10])
+l2 = ListNode(3)
+addAll(l2,[1,23,4,6,8])
 
 
+def solution(l1,l2):
+    

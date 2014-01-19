@@ -46,6 +46,9 @@ def sol1(head):
 print sol1(head)
 
 
+
+
+
 def permutation1(string):
     result = []
     for s in string:
@@ -65,7 +68,7 @@ def perms(word):
         results = new_results
     return results
 
-print perms('abcdsada')
+#print perms('abcdsada')
 
 
 

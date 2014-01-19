@@ -16,20 +16,18 @@ class LRUCache():
         self.items = sorted(self.zoo,key=self.zoo.get,reverse=True)[:self.capacity-1]
 
 
-    def get(self,key):
-        if key in self.items:
-            return self.zoo[key]
-        else:
-            return -1
+    def get(self):
+        return self.items.pop(0)
 
     def __repr__(self):
-        return ','.join([str(i) for i in self.items])
+        return str(len(self.items))
 
-r =[random.randrange(0,9) for n in range(100)]
+        
+r =[1,2,3,4,5,6,6,1,1,1,1,1,1,1,5,5,5,5,5,5]
 print r
 test = LRUCache(10,r)
 
 print test
 
-print test.get(2)
-print test.get(11)
+print test.get()
+print test.get()

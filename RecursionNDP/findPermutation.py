@@ -10,7 +10,7 @@ def perms(word):
         results = new_results
     return results
 
-print perms('abcdsada')
+print perms('hello')
 
 
 def permutation(string):
@@ -25,4 +25,4 @@ def permutation(string):
     return result
 
 
-print permutation('')
+#print permutation('hello')

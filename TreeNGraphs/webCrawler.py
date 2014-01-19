@@ -3,7 +3,7 @@ import re
 import urllib2
 import urlparse
 tocrawl = set()
-tocrawl.add('')
+tocrawl.add('http://www.google.com')
 crawled = set([])
 keywordregex = re.compile('<meta\sname=["\']keywords["\']\scontent=["\'](.*?)["\']\s/>')
 linkregex = re.compile('<a\s*href=[\'|"](.*?)[\'"].*?>')

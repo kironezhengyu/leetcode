@@ -39,4 +39,4 @@ for i in movie_info:
 
 
 
-#print shortest_dictance("act1", "KevinBacon", actor_info, movie_info)
+print shortest_dictance("act1", "KevinBacon", actor_info, movie_info)
